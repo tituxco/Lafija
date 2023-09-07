@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LaFija.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="logo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <ActivityIndicator x:Name="activityIndicator" IsRunning="False" Color="Blue" Grid.Row="0" />
+            <Label                
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="CenterAndExpand"
+                x:Name="myLabel"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button
+                x:Name="CounterBtn"
+                Text="Ver resultados"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" Grid.Column="0"/>
+                
+                <Button
+                x:Name="CounterBtn2"
+                Text="Mis boletas"                
+                Clicked="CounterBtn2_Clicked"
+                HorizontalOptions="Center" Grid.Column="1"/>
+            </Grid>
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
