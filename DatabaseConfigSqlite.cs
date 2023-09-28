@@ -161,6 +161,18 @@ namespace LaFija
             }
             return new List<Sorteos>();
         }
+        public bool EliminarBoletaFija(BoletaFija boletaFija)
+        {
+            try
+            {
+                Init();
+                conn.Delete(boletaFija);
+                return true;               
+            }catch (Exception e)
+            {
+                Debug.WriteLine("Error " +e.Message); return false;
+            }
+        }
     }
 
 }

@@ -6,18 +6,17 @@ namespace LaFija;
 
 public partial class BoletaFijaQuini6 : ContentPage
 {
-    //private List<int> numeros;
+
     DatabaseConfigSqlite databaseConfigSqlite = new DatabaseConfigSqlite(DatosComunes.BaseDeDatosLocal);
     ControlarBoletasFijas controlarBoletas = new ControlarBoletasFijas();
-    //FuncionesGlobales funcionesGlobales= new FuncionesGlobales();
-    //List<BoletaFija> boletasGuardadas= new List<BoletaFija>(); 
+    
     public BoletaFijaQuini6()
 	{
 		InitializeComponent();
 
         var sorteos= databaseConfigSqlite.ObtenerListaSorteos();
 
-        pckSorteosGuardados.ItemsSource = sorteos;
+        pckSorteosGuardados.ItemsSource = sorteos;        
 
         if (sorteos.Any())
         {
@@ -41,7 +40,7 @@ public partial class BoletaFijaQuini6 : ContentPage
         num6.Unfocused += Entry_Unfocused;
     }
 
-    private void ControlarJugadas()
+    public void ControlarJugadas()
     {
         List<BoletaFija> boletasFijas = new List<BoletaFija>();
         boletasFijas = databaseConfigSqlite.ObtenerBoletasFijas();
@@ -135,9 +134,15 @@ public partial class BoletaFijaQuini6 : ContentPage
         }
     }
 
-    private void boletasFijas_ItemTapped(object sender, ItemTappedEventArgs e)
+    private async void boletasFijas_ItemTapped(object sender, ItemTappedEventArgs e)
     {
-
+        ResultadosSorteos boletaSeleccionada = e.Item as ResultadosSorteos;
+        Sorteos sorteoSeleccionado=pckSorteosGuardados.SelectedItem as Sorteos;        
+        bool eliminarBoleta=await MauiPopup.PopupAction.DisplayPopup<bool>(new NumerosSorteadosPop(boletaSeleccionada.boletaFija,sorteoSeleccionado));
+        if (eliminarBoleta)
+        {
+            ControlarJugadas();
+        }
     }
 
     private void pckSorteosGuardados_SelectedIndexChanged(object sender, EventArgs e)

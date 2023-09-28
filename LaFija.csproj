@@ -100,6 +100,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="NumerosSorteadosPop.xaml.cs">
+	    <DependentUpon>NumerosSorteadosPop.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Properties\Resources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
@@ -116,6 +119,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="BoletaFijaQuini6.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="NumerosSorteadosPop.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

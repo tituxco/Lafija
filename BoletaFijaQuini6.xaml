@@ -44,7 +44,7 @@
                 <ListView x:Name="boletasFijasListView"
                               ItemsSource="{Binding resultadosSorteos}"
                               HasUnevenRows="True" SeparatorVisibility="Default"
-                                  ItemTapped="boletasFijas_ItemTapped">
+                              ItemTapped="boletasFijas_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>

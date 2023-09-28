@@ -30,7 +30,7 @@ namespace LaFija
             List<int> numerosTradicional=new List<int> { sorteoTradicional.num1, sorteoTradicional.num2, sorteoTradicional.num3, sorteoTradicional.num4, sorteoTradicional.num5, sorteoTradicional.num6};
 
             int aciertos = numerosTradicional
-            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString()));
+            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString("D2")));
                                      
             return aciertos;         
         }
@@ -41,7 +41,7 @@ namespace LaFija
             List<int> numerosLaSegunda = new List<int> { sorteoLaSegunda.num1, sorteoLaSegunda.num2, sorteoLaSegunda.num3, sorteoLaSegunda.num4, sorteoLaSegunda.num5, sorteoLaSegunda.num6 };
 
             int aciertos = numerosLaSegunda
-            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString()));
+            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString("D2")));
 
             return aciertos;
         }
@@ -53,7 +53,7 @@ namespace LaFija
             List<int> numerosRevancha = new List<int> { sorteoRevancha.num1, sorteoRevancha.num2, sorteoRevancha.num3, sorteoRevancha.num4, sorteoRevancha.num5, sorteoRevancha.num6 };
 
             int aciertos = numerosRevancha
-            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString()));
+            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString("D2")));
 
             return aciertos;
         }
@@ -66,7 +66,7 @@ namespace LaFija
             List<int> numerosSiempreSale = new List<int> { sorteoSiempreSale.num1, sorteoSiempreSale.num2, sorteoSiempreSale.num3, sorteoSiempreSale.num4, sorteoSiempreSale.num5, sorteoSiempreSale.num6 };
 
             int aciertos = numerosSiempreSale
-            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString()));
+            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString("D2")));
 
             return aciertos;
         }
@@ -91,7 +91,7 @@ namespace LaFija
 
             string[] numerosBoleta = { boletaFija.num1, boletaFija.num2, boletaFija.num3, boletaFija.num4, boletaFija.num5, boletaFija.num6 };
             int aciertos = numerosUnicosSorteadosPozoExtra
-            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString())); // Corregido aquí
+            .Count(numeroSorteado => numerosBoleta.Contains(numeroSorteado.ToString("D2"))); // Corregido aquí
         
 
 

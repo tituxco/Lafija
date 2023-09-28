@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mauiPopup:BasePopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mauiPopup="clr-namespace:MauiPopup.Views;assembly=MauiPopup"
+             x:Class="LaFija.NumerosSorteadosPop"
+             Title="NumerosSorteados">
+    <VerticalStackLayout>
+        <Label x:Name="lblDatosSorteo" Text="SORTEO Num: 1234 Fecha: 01-01-2023" FontSize="13" HorizontalOptions="Fill"  FontAttributes="Bold" BackgroundColor="#264653" TextColor="White" Margin="0,0,0,20"/>
+        
+        <Label Text="SORTEO TRADICIONAL" FontSize="13" FontAttributes="Bold" BackgroundColor="#e76f51" TextColor="White"/>
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="num1Tradicional" Text="01" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="0"/>
+            <Label x:Name="num2Tradicional" Text="02" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="1"/>
+            <Label x:Name="num3Tradicional" Text="03" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="2"/>
+            <Label x:Name="num4Tradicional" Text="04" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="3"/>
+            <Label x:Name="num5Tradicional" Text="05" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="4"/>
+            <Label x:Name="num6Tradicional" Text="06" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="5"/>
+        </Grid>
+
+        <Label Text="SORTEO LA SEGUNDA" FontSize="13" FontAttributes="Bold" BackgroundColor="#e76f51" TextColor="White"/>
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Margin="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="num1LaSegunda" Text="01" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="0"/>
+            <Label x:Name="num2LaSegunda" Text="02" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="1"/>
+            <Label x:Name="num3LaSegunda" Text="03" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="2"/>
+            <Label x:Name="num4LaSegunda" Text="04" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="3"/>
+            <Label x:Name="num5LaSegunda" Text="05" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="4"/>
+            <Label x:Name="num6LaSegunda" Text="06" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="5"/>
+        </Grid>
+
+        <Label Text="SORTEO REVANCHA" FontSize="13" FontAttributes="Bold" BackgroundColor="#e76f51" TextColor="White"/>
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Margin="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="num1Revancha" Text="01" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="0"/>
+            <Label x:Name="num2Revancha" Text="02" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="1"/>
+            <Label x:Name="num3Revancha" Text="03" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="2"/>
+            <Label x:Name="num4Revancha" Text="04" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="3"/>
+            <Label x:Name="num5Revancha" Text="05" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="4"/>
+            <Label x:Name="num6Revancha" Text="06" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="5"/>
+        </Grid>
+
+        <Label Text="SORTEO SIEMPRE SALE" FontSize="13" FontAttributes="Bold" BackgroundColor="#e76f51" TextColor="White"/>
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Margin="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="num1SiempreSale" Text="01" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="0"/>
+            <Label x:Name="num2SiempreSale" Text="02" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="1"/>
+            <Label x:Name="num3SiempreSale" Text="03" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="2"/>
+            <Label x:Name="num4SiempreSale" Text="04" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="3"/>
+            <Label x:Name="num5SiempreSale" Text="05" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="4"/>
+            <Label x:Name="num6SiempreSale" Text="06" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="5"/>
+        </Grid>
+
+        <Label Text="ACIERTOS POZO EXTRA" FontSize="13" FontAttributes="Bold" BackgroundColor="#e76f51" TextColor="White"/>
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Margin="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="aciertosSorteoExtra" Text="1" Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="0"/>
+        </Grid>
+               
+        <Label x:Name="lblDatosBoletaFija" Text="MI BOLETA" FontSize="13" FontAttributes="Bold" BackgroundColor="#2a9d8f" TextColor="White"/>
+        <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Margin="3" BackgroundColor="#2a9d8f">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="num1MiBoleta"  Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="0"/>
+            <Label x:Name="num2MiBoleta"  Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="1"/>
+            <Label x:Name="num3MiBoleta"  Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="2"/>
+            <Label x:Name="num4MiBoleta"  Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="3"/>
+            <Label x:Name="num5MiBoleta"  Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="4"/>
+            <Label x:Name="num6MiBoleta"  Margin="5" Padding="5" FontSize="13" FontAttributes="Bold" Grid.Column="5"/>
+        </Grid>
+
+        <Button x:Name="btnEliminarBoleta" Text="Eliminar boleta" Clicked="btnEliminarBoleta_Clicked"></Button>
+    </VerticalStackLayout>
+</mauiPopup:BasePopupPage>
